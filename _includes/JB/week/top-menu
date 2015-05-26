@@ -1,0 +1,44 @@
+			<nav class="header-nav clearfix">
+				<div class="menu-header-container">
+					<ul id="menu-header" class="menu">
+						<li id="menu-item" class="menu-item menu-item-type-post_type "><a href="http://demo.mh-themes.com/newsdesk/contact/">Contact</a></li>
+						<li id="menu-item" class="menu-item menu-item-type-custom "><a target="_blank" href="http://www.mhthemes.com/themes/mh/newsdesk/">Purchase</a></li>
+					</ul>
+				</div> 
+			</nav> 
+			<nav class="social-nav clearfix">
+				<div class="menu-social-container">
+					<ul id="menu-social" class="menu">
+						<li id="menu-item" class="menu-item menu-item-type-custom"><a target="_blank" href="https://www.facebook.com/droboshok">
+							<span class="fa-stack">
+								<i class="fa fa-circle fa-stack-2x"></i>
+								<i class="fa fa-mh-social fa-stack-1x"></i>
+							</span>
+							<span class="screen-reader-text">Facebook</span></a></li>
+							<li id="menu-item" class="menu-item menu-item-type-custom"><a target="_blank" href="https://twitter.com/droboshok"><span class="fa-stack">
+								<i class="fa fa-circle fa-stack-2x"></i>
+								<i class="fa fa-mh-social fa-stack-1x"></i>
+							</span>
+							<span class="screen-reader-text">Twitter</span></a></li>
+							<li id="menu-item" class="menu-item menu-item-type-custom"><a target="_blank" href="https://plus.google.com/u/0/108695071705325082911/posts">
+								<span class="fa-stack">
+									<i class="fa fa-circle fa-stack-2x"></i>
+									<i class="fa fa-mh-social fa-stack-1x"></i>
+								</span>
+								<span class="screen-reader-text">Google+</span></a></li>
+							<li id="menu-item" class="menu-item menu-item-type-custom"><a target="_blank" href="{{site.url}}/rss.xml">
+							<span class="fa-stack">
+								<i class="fa fa-circle fa-stack-2x"></i>
+								<i class="fa fa-mh-social fa-stack-1x"></i>
+							</span>
+							<span class="screen-reader-text">RSS</span></a></li>
+							<li id="menu-item" class="menu-item menu-item-type-custom"><a target="_blank" href="http://vk.com/id31485716">
+							<span class="fa-stack">
+								<i class="fa fa-circle fa-stack-2x"></i>
+								<i class="fa fa-mh-social fa-stack-1x"></i>
+							</span>
+							<span class="screen-reader-text">vk</span></a></li>
+								
+					</ul>
+				</div> 
+			</nav>

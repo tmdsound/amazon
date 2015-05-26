@@ -1,0 +1,67 @@
+
+
+  <div class="mh-section mh-group">
+
+      <nav class="breadcrumb">
+        <span>
+          <a href="{{BASE_PATH}}/index.html" class="bc-home">
+            <span>Home</span>
+          </a>
+        </span> 
+
+        <span>
+
+          <a href="/{{page.cat}}/" class="bc-home">
+            <span>{{ page.cat }}</span>
+          </a>
+        </span> 
+        <span>
+          <a>
+            <span>{{ page.category }}</span>
+          </a>
+        </span>
+      </nav>
+
+      <article class="post"> 
+        <header class="entry-header clearfix">
+          <h1 class="entry-title">{{ page.title }}</h1> 
+        </header>
+
+        <div class="entry-thumbnail"> 
+          <img src="{{ page.image }}">
+        </div>
+
+
+        <div class="entry-content clearfix">
+          {{ content }}
+        </div>
+
+      </article>
+      <hr>
+      {% include JB/week/social1 %}
+      <nav class="post-nav-wrap" role="navigation">
+          <ul class="post-nav clearfix">
+          {% if page.previous %}
+            <li class="post-nav-prev"> 
+              <a href="{{ BASE_PATH }}{{ page.previous.url }}" rel="prev"><i class="fa fa-chevron-left"></i>Сюда</a>
+            </li>
+            {% else %}
+            <li class="post-nav-prev disabled"> 
+              <a><i class="fa fa-chevron-left"></i>Сюда</a>
+            </li>
+            {% endif %}
+            {% if page.next %}
+            <li class="post-nav-prev"> 
+              <a href="{{ BASE_PATH }}{{ page.next.url }}" rel="prev">Туда<i class="fa fa-chevron-right"></i></a>
+            </li>
+            {% else %}
+            <li class="post-nav-prev disabled"> 
+              <a >Туда<i class="fa fa-chevron-right"></i></a>
+            </li>
+            {% endif %}
+          </ul> 
+      </nav>
+      
+        <hr>
+       {%comment%}{% include JB/comments-providers/facebook %}{%endcomment%}
+  </div>

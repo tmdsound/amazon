@@ -1,0 +1,12 @@
+             		<h4 class="widget-title">
+                  	<span>Популярные Теги</span>
+               		</h4>
+          			<div class="tagcloud">
+
+                		{% for category in site.categories %}
+                    		<span style="float:left;font-size: {{ category | last | size | times: 100 | divided_by: site.categories.size }}% ">
+                    		
+                  				<a href='/{{ category | first }}/' class='tag' >{{ category | first }}&nbsp;</a> 
+                  				</span>
+              			{% endfor %}
+         	 		</div>

@@ -1,0 +1,26 @@
+<div class="sb-widget">
+	<div class="mh-fp-grid-widget clearfix">
+		<div class="mh-section mh-group">
+		{% for post in site.posts %} 
+		{% if forloop.index >= 2 and forloop.index <= 5 %}
+			<article class="mh-col mh-1-4 ">
+				<div class="content-thumb content-grid-thumb"> 
+					<a href="{{ post.url }}" title="{{ post.title }}">
+						<img width="180" height="101" src="{{ post.category }}/{{ post.image }}" class="attachment-content-grid wp-post-image" alt="{{ post.title }}" /></a>
+				</div>
+					<p class="entry-meta">
+						<span>
+							<a href="{{ post.category.url }}" rel="category tag">{{ post.category }}</a>
+						</span>
+					</p>
+					<h3 class="content-grid-title">
+						<a href="{{ post.url }}" title="{{ post.title }}" rel="bookmark">{{ post.title }}</a>
+					</h3> 
+			</article>
+		<hr class="mh-separator content-grid-separator">
+		{% endif %}
+		{% endfor %}
+		</div>
+		<hr class="mh-separator hidden-sm">
+	</div>
+</div>	

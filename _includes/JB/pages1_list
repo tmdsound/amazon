@@ -1,0 +1,60 @@
+{% comment %}<!--
+The pages_list include is a listing helper.
+Usage:
+  1) assign the 'pages_list' variable to a valid array of pages or posts.
+  2) include JB/pages_list
+  example:
+    <ul>
+  	  {% assign pages_list = site.pages %}  
+  	  {% include JB/pages_list %}
+  	</ul>
+  	
+  Grouping: (optional): 
+  	assign the 'group' variable to constrain the list to only pages/posts
+  	in the given group. Note you must define the group manually in the page/post
+  	meta-data to use this feature.
+  	Grouping is mainly helpful for non-post pages.
+  	If you want to group posts, it's easier/better to tag them, then pass the tagged posts array.
+  	i.e. site.tags.cool_tag (this returns an array of posts tagged: cool_tag)
+  	
+  This helper can be seen in use at: ../_layouts/default.html
+-->{% endcomment %}
+
+{% if site.JB.pages_list.provider == "custom" %}
+  {% include custom/pages_list %}
+{% else %}
+  {% for node in pages_list %}
+    {% if node.title != null %}
+      {% if group == null or group == node.group %}
+      	{% if page.url == node.url %}
+      	<li class="active"><a href="{{ BASE_PATH }}{{node.url}}" class="active">{{node.title}}</a></li>
+      	{% else %}
+      	<article class="content-list clearfix">
+  <div class="content-thumb content-list-thumb"> 
+    <a href="{{ BASE_PATH }}{{node.url}}">
+      <img width="260" height="146" src="{{ BASE_PATH }}/{{node.category}}/{{ node.image }}" class="attachment-content-list wp-post-image" alt="{{ node.title }}" /></a>
+    </div> 
+    <header class="content-list-header">
+      <p class="entry-meta"> 
+        <span class="entry-meta-cats">
+          <a href="{{ BASE_PATH }}/{{node.category}}" rel="category tag">{{ node.category }}</a>
+        </span> 
+        <span class="entry-meta-date updated">{{ node.date | date: "%d %m %Y" }}</span>
+      </p>
+      <h3 class="content-list-title">
+        <a href="{{ BASE_PATH }}{{node.url}}" rel="bookmark">{{node.title}}</a>
+      </h3> 
+    </header>
+    <div class="content-list-excerpt">
+    {{ node.excerpt }}
+    </div> 
+</article>
+  
+<hr class="mh-separator content-list-separator">
+      	{% endif %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+{% assign pages_list = nil %}
+{% assign group = nil %}

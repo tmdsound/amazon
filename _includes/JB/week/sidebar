@@ -1,0 +1,28 @@
+<!-- Sidebar -->			
+		<aside class="home-sidebar">
+				<div class="sb-widget">
+					<div class="textwidget">
+						<div class="ad-spot">
+							<a target="_blank" title=""><img width="336" height="280" alt="advertisement" src=""></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="sb-widget">
+				{% include JB/week/last-post-sidebar %}
+				</div>
+
+				<div class="sb-widget">
+				{% for tag in site.tags %} 
+						{% if tag[0] == 'conceptcar' %}
+						{% include JB/week/sidebar-post %}
+						{% endif %}
+					{% endfor %}
+				</div>
+
+				<div class="sb-widget">
+					{% include JB/week/widget/tagcloud %}
+        		</div>
+        </aside>
+
+

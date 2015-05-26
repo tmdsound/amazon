@@ -1,0 +1,31 @@
+ {% for tag in site.tags %} 
+ {% if tag[0] == "tuning" %}
+ <ul >
+  {% assign pages_list = tag[1] %} 
+
+  {% for node in pages_list limit:1 %}
+  <article class="content-list clearfix">
+    <div class="content-thumb content-list-thumb"> 
+      <a href="{{ BASE_PATH }}{{node.url}}">
+        <img width="260" height="146" src="{{ BASE_PATH }}/{{node.category}}/{{ node.image }}" class="attachment-content-list wp-post-image" alt="{{ node.title }}" /></a>
+      </div> 
+      <header class="content-list-header">
+        <p class="entry-meta"> 
+          <span class="entry-meta-cats">
+            <a href="{{ BASE_PATH }}/{{node.category}}" rel="category tag">{{ node.category }}</a>
+          </span> 
+          <span class="entry-meta-date updated">{{ node.date | date: "%d %m %Y" }}</span>
+        </p>
+        <h3 class="content-list-title">
+          <a href="{{ BASE_PATH }}{{node.url}}" rel="bookmark">{{node.title}}</a>
+        </h3> 
+      </header>
+      <div class="content-list-excerpt">
+        {{ node.excerpt }}
+      </div> 
+    </article>
+    <hr class="mh-separator content-list-separator">
+    {% endfor %}
+  </ul>
+  {% endif %}
+  {% endfor %}

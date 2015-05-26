@@ -1,0 +1,43 @@
+	{% assign pages_list = tag[1] %} 
+
+      {% for node in pages_list limit:1 %}
+    {% if node.title != null %}
+      	{% if page.url == node.url %}
+      	<li class="active"><a href="{{ BASE_PATH }}{{node.url}}" class="active">{{node.title}}</a></li>
+      	{% else %}
+	<div class="mh-col mh-1-2 home-2">
+		<div class="sb-widget">
+			<h4 class="widget-title">
+					<span>
+						<a href="/{{node.cat}}/" class="widget-title-link">{{node.cat}}</a>
+						</span>
+				</h4>
+				<div class="mh-cp-widget clearfix"> 
+
+				<article class="cp-wrap cp-large clearfix">
+					<div class="cp-thumb-xl"> 
+						<a href="{{ node.url }}" title="{{ node.title }}">
+							<img width="373" height="210" src="{{ node.category }}/{{ node.image }}" class="attachment-cp-thumb-xl wp-post-image" alt="Kreml" /></a>
+					</div>
+					<p class="entry-meta">
+						<span class="updated">{{node.date | date:'%Y-%m-%d'}}</span>
+					</p>
+					<h3 class="cp-title-xl">
+						<a href="{{ node.url }}" title="{{ node.title }}" rel="bookmark">{{ node.title }}</a>
+					</h3>
+					<div class="cp-excerpt-xl">
+						{{ node.excerpt }} 
+							<a class="button" href="{{ post.url }}"> 
+								<span>Дальше</span> 
+							</a>
+					</div> 
+				</article>
+				</div>
+			</div>
+	</div>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+	
+	
+

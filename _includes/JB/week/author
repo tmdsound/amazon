@@ -1,0 +1,15 @@
+<h4 class="widget-title">
+	<span>About the Author</span>
+</h4> 
+<section class="author-box clearfix">
+	<div class="author-box-avatar">
+		<a href="http://demo.mh-themes.com/newsdesk/author/aline/">
+			<img alt="" src="http://1.gravatar.com/avatar/180124f0d7a51450fa74af7b171805f8?s=100&amp;d=mm&amp;r=g" srcset="http://1.gravatar.com/avatar/180124f0d7a51450fa74af7b171805f8?s=200&amp;d=mm&amp;r=g 2x" class="avatar avatar-100 photo" height="100" width="100">
+		</a>
+	</div>
+	<h5 class="author-box-name">
+		<a href="http://demo.mh-themes.com/newsdesk/author/aline/">Aline</a>
+	</h5>
+	<div class="author-box-desc">MH Themes is specialized in feature rich Premium Magazine WordPress Themes which are suitable for Dynamic News Websites, Online Magazines and other editorial Projects.</div> 
+
+</section>

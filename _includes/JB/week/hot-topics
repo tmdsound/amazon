@@ -1,0 +1,17 @@
+<section id="ticker" class="news-ticker mh-col mh-2-3 clearfix"> 
+ 	<span class="ticker-title">Hot Topics</span>
+ 		<ul class="ticker-content">
+ 			<li class="ticker-item"> 
+ 				<a class="ticker-item-link" href="http://demo.mh-themes.com/newsdesk/government-submits-legal-bill/" title="Barius iaculis quis eu est lorem ipsum dolor sit amet nec accumsan enim">
+ 					<span class="ticker-item-date">January 30, 2015</span>
+ 				<span class="ticker-item-separator">|</span>
+ 				<span class="ticker-item-title">Barius iaculis quis eu est lorem ipsum dolor sit amet nec accumsan enim</span> </a>
+ 				</li>
+ 				<li class="ticker-item"> 
+ 				<a class="ticker-item-link" href="http://demo.mh-themes.com/newsdesk/government-submits-legal-bill/" title="Barius ">
+ 					<span class="ticker-item-date">Febriary 30, 2015</span>
+ 				<span class="ticker-item-separator">|</span>
+ 				<span class="ticker-item-title">Barius /span> </a>
+ 				</li>
+ 			</ul> 
+ 	</section> 

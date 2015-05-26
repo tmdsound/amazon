@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru" prefix="og: http://ogp.me/ns#" prefix="fb: http://ogp.me/fb/ns#">
+<head>
+  <meta charset="UTF-8">
+    <title>{{ page.title }}</title>
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    <meta name="author" content="{{ site.author.name }}">
+  <!-- This site is optimized with the Yoast WordPress SEO plugin v2.1.1 - https://yoast.com/wordpress/plugins/seo/ -->
+  
+  <!-- / Yoast WordPress SEO plugin. -->
+  <link type="text/css" media="all" href="{{ ASSET_PATH }}/css/a.css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' id='mh-font-awesome-css'  href='{{ ASSET_PATH }}/font-awesome-4.3.0/css/font-awesome.min.css' type='text/css' media='all' />
+  <!-- <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700&subset=cyrillic' rel='stylesheet' type='text/css'> -->
+  <!-- <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700&subset=cyrillic,latin' rel='stylesheet' type='text/css'> -->
+
+  <!-- <link rel='stylesheet' id='mh-google-fonts-css'  href='http://fonts.googleapis.com/css?family=PT+Serif:300,400,400italic,600,700|Oswald:300,400,400italic,600,700' type='text/css' media='all' />  -->
+  <!-- <link href='http://fonts.googleapis.com/css?family=Cuprum:400,400italic,700&subset=cyrillic,latin' rel='stylesheest' type='text/css'> -->
+<meta property="og:locale" content="ru_RU" />
+<!-- <meta property="og:type" content="article" /> -->
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:site" content="@{{site.author.twitter}}"/>
+
+<meta property="twitter:title" content="{{ page.title }}" />
+
+<meta name="twitter:image:src" content="{{site.url}}/{{page.category}}/{{page.image}}"/> 
+<meta name="twitter:description" content="{{ page.excerpt | strip_html | strip_newlines }}"s />
+
+
+<meta property="og:title" content="{{ page.title }}" />
+<meta property="og:url" content="{{site.url}}{{page.url}}" />
+<meta property="og:image" content="{{site.url}}/{{page.category}}/{{page.image}}" />
+<meta property="og:type" content="{{ page.excerpt | strip_html | strip_newlines }}" />
+<meta property="fb:admins"content="1585821168350647"/>
+<link rel="canonical" href="{{site.url}}{{page.url}}" />
+
+
+</head>
+
+
+<body class="home page mh-right-sb">
+  <div class="header-top">
+
+    <div class="wrapper-inner clearfix">
+      <!-- TopMenu -->
+      {% include JB/week/top-menu %}
+    </div>
+  </div>
+        
+  <div id="mh-wrapper">
+    <header class="mh-header">
+      <div class="header-wrap clearfix">
+        <!-- Logo -->
+        <div class="mh-col mh-1-3 header-logo"> 
+          <a href="{{ HOME_PATH }}" title="{{ page.title }}" rel="home">
+            <div class="logo-wrap" role="banner"> 
+              <img src="{{ BASE_PATH }}/img/cropped-logo.png" height="100" width="300" alt="{{ page.title }}" />
+            </div> 
+          </a>
+        </div><!-- EndLogo -->
+      </div>
+        <div class="header-menu clearfix">
+          <!-- Menu --> {% include JB/week/menu-top %}
+          <div class="header-sub clearfix">
+            <!-- HotTopics -->{% include JB/week/hot-topics %} 
+    {% include JB/week/search %}
+          </div>
+        </div> 
+    </header>
+    <div class="home mh-section mh-group">
+        <!-- Content -->
+      <div id="main-content" class="home-columns">
+        {{ content }}
+       </div><!-- EndContent -->
+      <!-- Sidebar -->
+      {% include JB/week/sidebar %} 
+    </div>
+  </div>
+<!-- Footer -->
+{% include JB/week/footer %}
+<div id="fb-root"></div>
+<script type='text/javascript' src='{{ ASSET_PATH }}/js/jquery.js'></script> 
+<script type='text/javascript' src='{{ ASSET_PATH }}/js/jquery-migrate.min.js'></script> 
+<script type='text/javascript' src='{{ ASSET_PATH }}/js/scripts.js'></script> 
+
+<script type='text/javascript' src='{{ ASSET_PATH }}/js/jquery.form.min.js'></script>
+<script type='text/javascript' src='{{ ASSET_PATH }}/js/scripts1.js'></script> 
+<script type='text/javascript' src='{{ ASSET_PATH }}/js/comment-reply.min.js'></script>
+
+
+</body>
+</html>

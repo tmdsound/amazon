@@ -1,0 +1,28 @@
+ 		<div class="sb-widget">
+			<h4 class="widget-title">
+				<span>Popular Articles</span>
+			</h4>
+			<div class="mh-cp-widget clearfix">
+
+		<article class="cp-wrap cp-large clearfix">
+			<div class="cp-thumb-xl"> 
+				<a href="http://demo.mh-themes.com/newsdesk/mega-headphones-with-great-features/" title="Ligula feugiat nam eu tincidunt vestibulum">
+					<img width="373" height="210" src="http://demo.mh-themes.com/newsdesk/wp-content/uploads/sites/8/2015/01/headphone-373x210.jpg" class="attachment-cp-thumb-xl wp-post-image" alt="Headphone" />
+				</a>
+			</div>
+			<p class="entry-meta">
+				<span class="updated">October 2, 2014</span>
+			</p>
+			<h3 class="cp-title-xl">
+				<a href="http://demo.mh-themes.com/newsdesk/mega-headphones-with-great-features/" title="Ligula feugiat nam eu tincidunt vestibulum" rel="bookmark">Ligula feugiat nam eu tincidunt vestibulum</a>
+			</h3>
+			<div class="cp-excerpt-xl">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet ullamcorper lacus, in ultricies ipsum. In eget porta nisl, id sollicitudin nunc. Quisque eget&#8230;</p> 
+					<a class="button" href="http://demo.mh-themes.com/newsdesk/mega-headphones-with-great-features/"> 
+				<span>Read More</span> 
+					</a>
+			</div>
+		</article>
+
+		<hr class="mh-separator">
+ 		<!-- End Popular Articles -->

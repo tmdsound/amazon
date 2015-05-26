@@ -1,0 +1,34 @@
+  <div class="mh-section mh-group">
+
+      <nav class="breadcrumb">
+        <span>
+          <a href="{{BASE_PATH}}/index.html" class="bc-home">
+            <span>Главная</span>
+          </a>
+        </span> 
+
+        <span>
+
+          <a href="/{{page.cat}}/" class="bc-home">
+            <span>{{ page.cat }}</span>
+          </a>
+        </span> 
+      </nav>
+
+      <article class="post"> 
+        <header class="entry-header clearfix">
+          <h1 class="entry-title">{{ page.title }}</h1> 
+        </header>
+
+
+
+
+        <div class="entry-content clearfix">
+          {{ content }}
+        </div>
+ 
+      </article>
+
+      
+
+  </div>

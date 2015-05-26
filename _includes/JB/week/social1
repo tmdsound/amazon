@@ -1,0 +1,27 @@
+<div class="mh-share-buttons mh-group">
+	<div class="mh-col mh-1-4 mh-facebook"> 
+		<a href="#" onclick="window.open('http://www.facebook.com/sharer.php?u={{ site.url }}{{ page.url }}&amp;t={{page.title}}', 'facebookShare', 'width=626,height=436'); return false;" title="Share on Facebook">
+			<span class="mh-share-button">
+				<i class="fa fa-facebook fa-2x"></i>SHARE</span>
+		</a>
+	</div>
+	<div class="mh-col mh-1-4 mh-twitter"> 
+		<a href="#" onclick="window.open('http://twitter.com/share?text={{ page.title }}-&amp;url={{ site.url }}{{ page.url }}', 'twitterShare', 'width=626,height=436'); return false;" title="Tweet This Post">
+			<span class="mh-share-button">
+				<i class="fa fa-twitter fa-2x"></i>TWEET</span>
+		</a>
+	</div>
+	<div class="mh-col mh-1-4 mh-vk"> 
+		<a href="#" onclick="window.open('http://vkontakte.ru/share.php?url={{ site.url }}{{ page.url }}&amp;image={{ site.url }}/{{ page.category }}/{{ page.image }}&amp;description={{ page.title }}', 'pinterestShare', 'width=750,height=350'); return false;" title="Vkontakte">
+			<span class="mh-share-button">
+				<i class="fa fa-vk fa-2x"></i>VK</span>
+		</a>
+	</div>
+	<div class="mh-col mh-1-4 mh-googleplus"> 
+		<a href="#" onclick="window.open('https://plusone.google.com/_/+1/confirm?hl=en-US&amp;url={{ site.url }}{{ page.url }}', 'googleShare', 'width=626,height=436'); return false;" title="Share on Google+" target="_blank">
+			<span class="mh-share-button">
+				<i class="fa fa-google-plus fa-2x"></i>SHARE
+				</span>
+		</a>
+	</div>
+</div>

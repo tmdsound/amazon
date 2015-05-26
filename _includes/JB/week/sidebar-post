@@ -1,0 +1,32 @@
+						{% assign pages1_list = tag[1] %} 
+
+      {% for node in pages1_list limit:1 %}
+    {% if node.title != null %}
+<h4 class="widget-title">
+	<span>{{ node.cat }}</span>
+		</h4>
+			<div class="mh-cp-widget clearfix"> 
+				<article class="cp-wrap cp-large clearfix">
+					<div class="cp-thumb-xl"> 
+						<a href="{{ node.url }}" title="{{ node.title }}">
+							<img width="373" height="210" src="/{{ node.category }}/{{ node.image }}" class="attachment-cp-thumb-xl wp-node-image" alt="{{ node.title }}" /></a>
+										</div>
+									<p class="entry-meta">
+										<span class="updated">{{ node.date | date:"%Y-%m-%d"}}</span>
+											</p>
+									<h3 class="cp-title-xl">
+										<a href="{{node.url}}" title="{{ node.title }}" rel="bookmark">{{ node.title }}</a>
+									</h3>
+									<div class="cp-excerpt-xl">
+										{{ node.excerpt }} 
+											<a class="button" href="{{node.url}}">
+											<span>Дальше</span> </a>
+									</div> 
+						</article>
+						<hr class="mh-separator"> 
+					</div>
+    {% endif %}
+  {% endfor %}
+	
+	
+

@@ -1,0 +1,31 @@
+{% for post in site.posts %}
+{% if forloop.first %}
+<div class="sb-widget">
+ 	<div class="mh-fp-large-widget clearfix">
+ 		<article class="content-lead ">
+ 			<div class="content-thumb content-lead-thumb"> 
+ 				<a href="{{ post.url }}" title="{{ post.title }}">
+ 					<img width="777" height="437" src="/{{ post.category }}/{{ post.image }}" class="attachment-content-single wp-post-image" alt="Government" />
+ 				</a>
+ 			</div>
+ 				<p class="entry-meta"> 
+ 					<span class="entry-meta-cats"><a href="{{ post.category.url }}" rel="category tag">{{ post.category }}</a>
+ 					</span> 
+ 					<span class="entry-meta-date updated">{{ post.date | date: "%Y-%m-%d"}}</span>
+ 				</p>
+ 				<h3 class="content-lead-title">
+ 					<a href="{{ post.url }}" title="" rel="bookmark">{{ post.title }}</a>
+ 				</h3>
+ 				<div class="content-lead-excerpt">
+ 					{{ post.excerpt }}
+ 					 
+ 						<a class="button" href="{{ post.url }}"> 
+ 							<span>Дальше</span> 
+ 						</a>
+ 				</div> 
+ 			</article>
+ 		<hr class="mh-separator">
+ 	</div>
+</div>
+{%endif%}
+{% endfor %}

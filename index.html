@@ -1,0 +1,74 @@
+---
+layout: page_x
+title: Hello World!
+tagline: Supporting tagline
+---
+{% include JB/setup %}
+{% include JB/week/1 %}
+{% include JB/week/2 %}
+
+{% include JB/week/reklama-post %}
+	
+<div class="mh-section mh-group">
+	{%comment%}{% include JB/week/blog-2 %}{%endcomment%}
+	{% for tag in site.tags %} 
+	{% if tag[0] == 'volkswagen'%}
+	{% include JB/week/blog-japan %}
+	{% endif %}
+	{% if tag[0] == 'japan'%}
+	{% include JB/week/blog-japan %}
+	 
+  {% endif %}
+{% endfor %}
+
+</div> 
+{% include JB/week/blog121 %}
+<div class="mh-section mh-group">
+	{%comment%}{% include JB/week/blog-2 %}{%endcomment%}
+	{% for tag in site.tags %} 
+	{% if tag[0] == 'america'%}
+	{% include JB/week/blog-japan %}
+	{% endif %}
+	{% if tag[0] == 'asia'%}
+	{% include JB/week/blog-japan %}
+	 
+  {% endif %}
+{% endfor %}
+
+</div>
+
+{% for post in site.posts %}
+	{{ post.cat }}
+	{% endfor%}
+
+	    {% assign posts1_collate = site.posts %}
+    {% include JB/posts1_collate %}
+
+    {% for j in posts1_colate %}
+    	{{ j[0] }}
+    	{%endfor%}
+
+    	    
+
+
+{% for post in site.posts %}
+	{% if post.cat == 'europe'%}
+    {{ post.cat }}
+    {% break %}
+	{%endif%}
+{% endfor %}
+
+
+Hello tobi has {{ 'tobi' | size }} letters!
+
+
+Hello {{ 'now' | date: "%Y %h" }}
+
+ <p>{{ 'Яндекс' | link_to: 'http://yandex.ru', 'ссылка на яндекс' }}</p>
+
+ 
+ {{ 'string' | capitalize }}   
+
+ {{ site.posts | first }}
+
+ {{site.url}}/{{page.category}}/{{page.image}}

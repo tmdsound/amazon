@@ -1,0 +1,34 @@
+{% for post in site.posts limit:1 %}
+	<div class="mh-col mh-1-2 home-2">
+		<div class="sb-widget">
+			<h4 class="widget-title">
+					<span>
+						<a href="/{{post.cat}}/" class="widget-title-link">{{post.cat}}</a>
+						</span>
+				</h4>
+				<div class="mh-cp-widget clearfix"> 
+
+				<article class="cp-wrap cp-large clearfix">
+					<div class="cp-thumb-xl"> 
+						<a href="{{ post.url }}" title="{{ post.title }}">
+							<img width="373" height="210" src="{{ post.category }}/{{ post.image }}" class="attachment-cp-thumb-xl wp-post-image" alt="Kreml" /></a>
+					</div>
+					<p class="entry-meta">
+						<span class="updated">{{post.date | date:'%Y-%m-%d'}}</span>
+					</p>
+					<h3 class="cp-title-xl">
+						<a href="{{ post.url }}" title="{{ post.title }}" rel="bookmark">{{ post.title }}</a>
+					</h3>
+					<div class="cp-excerpt-xl">
+						{{ post.excerpt }} 
+							<a class="button" href="{{ post.url }}"> 
+								<span>Read More</span> 
+							</a>
+					</div> 
+				</article>
+				</div>
+			</div>
+
+		
+	</div>
+	{%endfor%}

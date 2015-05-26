@@ -1,0 +1,54 @@
+{% comment %}<!--
+The tags_list include is a listing helper for tags.
+Usage:
+  1) assign the 'tags_list' variable to a valid array of tags.
+  2) include JB/tags_list
+  example:
+    <ul>
+  	  {% assign tags_list = site.tags %}  
+  	  {% include JB/tags_list %}
+  	</ul>
+  
+  Notes: 
+    Tags can be either a Hash of tag objects (hashes) or an Array of tag-names (strings).
+    The encapsulating 'if' statement checks whether tags_list is a Hash or Array.
+    site.tags is a Hash while page.tags is an array.
+    
+  This helper can be seen in use at: ../_layouts/default.html
+-->{% endcomment %}
+
+{% if site.JB.tags_list.provider == "custom" %}
+  {% include custom/tags_list %}
+{% else %}
+  {% if tags_list.first[0] == null %}
+    {% for tag in tags_list %} 
+    	      <article class="content-list clearfix">
+  <div class="content-thumb content-list-thumb"> 
+    <a href="{{ BASE_PATH }}{{ site.JB.tags_path }}">
+      <img width="260" height="146" src="{{ page.image }}" class="attachment-content-list wp-post-image" alt="{{ post.title }}" /></a>
+    </div> 
+    <header class="content-list-header">
+      <p class="entry-meta"> 
+        <span class="entry-meta-cats">
+          <a href="{{ page.category }}" rel="category tag">World</a>
+        </span> 
+        <span class="entry-meta-date updated">January 5, 2015</span>
+      </p>
+      <h3 class="content-list-title">
+        <a href="http://demo.mh-themes.com/newsdesk/protest-for-vietnam-freedom-activists/" title="Onim velit imperdiet libero vel lobortis orci diam" rel="bookmark">Onim velit imperdiet libero vel lobortis orci diam</a>
+      </h3> 
+    </header>
+    <div class="content-list-excerpt">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet ullamcorper lacus, in ultricies ipsum. In eget porta nisl, id sollicitudin nunc. Quisque eget&#8230;</p>
+    </div> 
+</article>
+  
+<hr class="mh-separator content-list-separator">
+    {% endfor %}
+  {% else %}
+    {% for tag in tags_list %} 
+
+    {% endfor %}
+  {% endif %}
+{% endif %}
+{% assign tags_list = nil %}
