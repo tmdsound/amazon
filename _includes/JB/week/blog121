@@ -1,6 +1,7 @@
  {% for tag in site.tags %} 
  {% if tag[0] == "tuning" %}
  <ul >
+    <hr class="mh-separator content-list-separator">
   {% assign pages_list = tag[1] %} 
 
   {% for node in pages_list limit:1 %}
