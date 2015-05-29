@@ -1,6 +1,5 @@
 <div class="sb-widget">
 	<div class="mh-fp-grid-widget clearfix">
-		<hr class="mh-separator hidden-sm">
 		<div class="mh-section mh-group">
 		{% for post in site.posts %} 
 		{% if forloop.index >= 2 and forloop.index <= 5 %}
