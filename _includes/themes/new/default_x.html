@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="ru" prefix="og: http://ogp.me/ns#" prefix="fb: http://ogp.me/fb/ns#">
+<html class="no-js" lang="ru" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#" />
 <head>
   <meta charset="UTF-8">
     <title>{{ page.title }}</title>
@@ -29,8 +29,9 @@
 
 <meta property="og:title" content="{{ page.title }}" />
 <meta property="og:url" content="{{site.url}}{{page.url}}" />
+<meta property="og:description" content="{{ page.description }}" />
 <meta property="og:image" content="{{site.url}}/{{page.category}}/{{page.image}}" />
-<meta property="og:type" content="{{ page.excerpt | strip_html | strip_newlines }}" />
+<meta property="og:type" content="article" />
 <meta property="fb:admins"content="1585821168350647"/>
 <link rel="canonical" href="{{site.url}}{{page.url}}" />
 
