@@ -12,7 +12,7 @@
 		</a>
 	</div>
 	<div class="mh-col mh-1-4 mh-vk"> 
-		<a href="#" onclick="window.open('http://vkontakte.ru/share.php?url={{ site.url }}{{ page.url }}&amp;image={{ site.url }}/{{ page.category }}/{{ page.image }}&amp;description={{ page.title }}', 'pinterestShare', 'width=750,height=350'); return false;" title="Vkontakte">
+		<a href="#" onclick="window.open('http://vkontakte.ru/share.php?url={{ site.url }}{{ page.url }}&amp;image={{ site.url }}/{{ page.category }}/{{ page.image }}&amp;description={{ page.description }}', 'pinterestShare', 'width=750,height=350'); return false;" title="Vkontakte">
 			<span class="mh-share-button">
 				<i class="fa fa-vk fa-2x"></i>VK</span>
 		</a>
