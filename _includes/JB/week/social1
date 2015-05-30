@@ -1,9 +1,6 @@
 <div class="mh-share-buttons mh-group">
 	<div class="mh-col mh-1-4 mh-facebook"> 
-		<a href="#" onclick="window.open('http://www.facebook.com/sharer.php?u={{ site.url }}{{ page.url }}&amp;t={{page.title}}', 'facebookShare', 'width=626,height=436'); return false;" title="Share on Facebook">
-			<span class="mh-share-button">
-				<i class="fa fa-facebook fa-2x"></i>SHARE</span>
-		</a>
+		<a href="#" onclick="window.open('http://www.facebook.com/sharer.php?s=100&p[title]={{ page.title }}&amp;p[summary]={{ page.description }}&amp;p[url]={{ post_url }}&amp;p[images][0]={{site.url}}{{page.category}}/{{page.image}}', 'facebookShare', 'width=626,height=436'); return false;" title="{{ page.title }}"><span class="mh-share-button"><i class="fa fa-facebook fa-2x"></i>SHARE</span></a>
 	</div>
 	<div class="mh-col mh-1-4 mh-twitter"> 
 		<a href="#" onclick="window.open('http://twitter.com/share?text={{ page.title }}-&amp;url={{ site.url }}{{ page.url }}', 'twitterShare', 'width=626,height=436'); return false;" title="Tweet This Post">
