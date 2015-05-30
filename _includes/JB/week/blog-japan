@@ -17,7 +17,7 @@
 				<article class="cp-wrap cp-large clearfix">
 					<div class="cp-thumb-xl"> 
 						<a href="{{ node.url }}" title="{{ node.title }}">
-							<img width="373" height="210" src="{{ node.category }}/{{ node.image }}" class="attachment-cp-thumb-xl wp-post-image" alt="Kreml" /></a>
+							<img width="373" height="210" src="{{ node.category }}/medium/{{ node.image }}" class="attachment-cp-thumb-xl wp-post-image" alt="Kreml" /></a>
 					</div>
 					<p class="entry-meta">
 						<span class="updated">{{node.date | date:'%Y-%m-%d'}}</span>

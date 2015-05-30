@@ -17,10 +17,8 @@ tagline: Supporting tagline
 	{% endif %}
 	{% if tag[0] == 'japan'%}
 	{% include JB/week/blog-japan %}
-	 
   {% endif %}
 {% endfor %}
-
 </div> 
 {% include JB/week/blog121 %}
 <div class="mh-section mh-group">
@@ -64,11 +62,10 @@ Hello tobi has {{ 'tobi' | size }} letters!
 
 Hello {{ 'now' | date: "%Y %h" }}
 
- <p>{{ 'Яндекс' | link_to: 'http://yandex.ru', 'ссылка на яндекс' }}</p>
+
 
  
  {{ 'string' | capitalize }}   
 
- {{ site.posts | first }}
 
- {{site.url}}/{{page.category}}/{{page.image}}
+ 

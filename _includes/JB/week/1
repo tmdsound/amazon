@@ -5,7 +5,7 @@
  		<article class="content-lead ">
  			<div class="content-thumb content-lead-thumb"> 
  				<a href="{{ post.url }}" title="{{ post.title }}">
- 					<img width="777" height="437" src="/{{ post.category }}/{{ post.image }}" class="attachment-content-single wp-post-image" alt="Government" />
+ 					<img src="/{{ post.category }}/{{ post.image }}" alt="Government" />
  				</a>
  			</div>
  				<p class="entry-meta"> 

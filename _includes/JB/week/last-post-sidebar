@@ -3,7 +3,7 @@
 					<article class="cp-wrap cp-small clearfix">
 						<div class="cp-thumb-small"> 
 							<a href="{{ post.url }}" title="{{post.title}}">
-								<img width="120" height="67" src="/{{post.category}}/{{ post.image }}" class="attachment-cp-thumb-small wp-post-image" alt="Seaside" />
+								<img src="/{{post.category}}/thumbnail/{{ post.image }}" class="attachment-cp-thumb-small wp-post-image" alt="Seaside" />
 								</a>
 							</div>
 						<p class="entry-meta">

@@ -6,7 +6,7 @@
 			<article class="mh-col mh-1-4 ">
 				<div class="content-thumb content-grid-thumb"> 
 					<a href="{{ post.url }}" title="{{ post.title }}">
-						<img width="180" height="101" src="{{ post.category }}/{{ post.image }}" class="attachment-content-grid wp-post-image" alt="{{ post.title }}" /></a>
+						<img src="{{ post.category }}/large/{{ post.image }}" class="attachment-content-grid wp-post-image" alt="{{ post.title }}" /></a>
 				</div>
 					<p class="entry-meta">
 						<span>
