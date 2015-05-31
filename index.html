@@ -39,12 +39,12 @@ tagline: Supporting tagline
 	{{ post.cat }}
 	{% endfor%}
 
-	    {% assign posts1_collate = site.posts %}
+	{% assign posts1_collate = site.posts %}
     {% include JB/posts1_collate %}
 
     {% for j in posts1_colate %}
     	{{ j[0] }}
-    	{%endfor%}
+{%endfor%}
 
     	    
 
@@ -65,7 +65,10 @@ Hello {{ 'now' | date: "%Y %h" }}
 
 
  
- {{ 'string' | capitalize }}   
+ {{ 'string' | capitalize }} 
+
+
+
 
 
  
