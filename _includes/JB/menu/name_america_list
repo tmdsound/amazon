@@ -1,0 +1,18 @@
+{% for tag in site.tags %} 
+{% if tag[0] == 'america'%}
+{% assign america_list = tag[1] %}	 
+{% endif %}		
+{% endfor %}
+
+
+{% assign delimiter = "," %}
+{% assign names_str = "" %}
+{% assign names = america_list | map: 'category' %}
+
+{% for name in names %}
+    {% assign names_arr = names_str | split: delimiter %}
+    {% unless names_arr contains name %}
+        {% assign names_str = names_str | append: delimiter | append: name %}
+    {% endunless %}
+{% endfor %}
+{% assign uniq_america = names_str | remove_first: delimiter | split: delimiter  %}

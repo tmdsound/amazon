@@ -1,5 +1,3 @@
-
-
 <nav class="main-nav clearfix">
  		<div class="menu-navigation-container">
  			<ul id="menu-navigation" class="menu">
@@ -7,7 +5,7 @@
  				<li class="menu-item"><a href="/tuning/index.html">Tuning</a></li>
  				<li class="menu-item"><a href="/europe/">Europe</a>
  					<ul class="sub-menu">
- 						{% include JB/name_europe_list %}
+ 						{% include JB/menu/name_europe_list %}
  						{% for gfd in uniq_europe %}
  						<li class="menu-item"><a href="/{{ gfd }}/">{{ gfd }}</a></li>
 						{% endfor %}
@@ -15,24 +13,26 @@
  				</li>
  				<li class="menu-item"><a href="/japan/">Japan</a>
  					<ul class="sub-menu">
- 						<li class="menu-item"><a href="/toyota/">Toyota</a></li>
- 						<li class="menu-item"><a href="/nissan/">Nissan</a></li>
- 						<li class="menu-item"><a href="/mitsubishi/">Mitsubishi</a></li>
- 						<li class="menu-item"><a href="/mazda/">Mazda</a></li>
- 						<li class="menu-item"><a href="/subaru/">Subaru</a></li>
- 				
+ 						{% include JB/menu/name_japan_list %}
+ 						{% for gfd in uniq_japan %}
+ 						<li class="menu-item"><a href="/{{ gfd }}/">{{ gfd }}</a></li>
+						{% endfor %}
  					</ul>
  				</li>
  				<li class="menu-item"><a href="/america/">America</a>
  					<ul class="sub-menu">
- 						<li class="menu-item"><a href="/ford/">Ford</a></li>
- 				
+ 						{% include JB/menu/name_america_list %}
+ 						{% for gfd in uniq_america %}
+ 						<li class="menu-item"><a href="/{{ gfd }}/">{{ gfd }}</a></li>
+						{% endfor %}
  					</ul>
  				</li>
  				<li class="menu-item"><a href="/asia/">Asia</a>
  					<ul class="sub-menu">
- 						<li class="menu-item"><a href="/kia/">Kia</a></li>
- 				
+ 						{% include JB/menu/name_asia_list %}
+ 						{% for gfd in uniq_asia %}
+ 						<li class="menu-item"><a href="/{{ gfd }}/">{{ gfd }}</a></li>
+						{% endfor %}
  					</ul>
  				</li>
  				<li class="menu-item "><a href="/conceptcar">ConceptCar</a></li>
