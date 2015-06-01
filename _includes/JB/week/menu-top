@@ -1,3 +1,5 @@
+
+
 <nav class="main-nav clearfix">
  		<div class="menu-navigation-container">
  			<ul id="menu-navigation" class="menu">
@@ -5,11 +7,10 @@
  				<li class="menu-item"><a href="/tuning/index.html">Tuning</a></li>
  				<li class="menu-item"><a href="/europe/">Europe</a>
  					<ul class="sub-menu">
- 						<li class="menu-item"><a href="/audi/">Audi</a></li>
- 						<li class="menu-item"><a href="/bmw/">BMW</a></li>
- 						<li class="menu-item"><a href="/mercedes/">Mercedes</a></li>
- 						<li class="menu-item"><a href="/volkswagen/">Volkswagen</a></li>
- 				
+ 						{% include JB/name_europe_list %}
+ 						{% for gfd in uniq_europe %}
+ 						<li class="menu-item"><a href="/{{ gfd }}/">{{ gfd }}</a></li>
+						{% endfor %}
  					</ul>
  				</li>
  				<li class="menu-item"><a href="/japan/">Japan</a>

@@ -373,6 +373,7 @@ task :post_e do
     post.puts "---"
     post.puts "{% include JB/setup %}"
     post.puts "<!-- more -->"
+    post.puts "{% include JB/week/reklama-post %}"
 
   end
 end # task :post
@@ -409,6 +410,7 @@ task :post_j do
     post.puts "---"
     post.puts "{% include JB/setup %}"
     post.puts "<!-- more -->"
+    post.puts "{% include JB/week/reklama-post %}"
 
   end
 end # task :post
@@ -445,6 +447,7 @@ task :post_am do
     post.puts "---"
     post.puts "{% include JB/setup %}"
     post.puts "<!-- more -->"
+    post.puts "{% include JB/week/reklama-post %}"
 
   end
 end # task :post
@@ -481,6 +484,7 @@ task :post_as do
     post.puts "---"
     post.puts "{% include JB/setup %}"
     post.puts "<!-- more -->"
+    post.puts "{% include JB/week/reklama-post %}"
 
   end
 end # task :post

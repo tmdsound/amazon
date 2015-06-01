@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html class="no-js" lang="ru" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#" />
 <head>
+ {% strip %}
   <meta charset="UTF-8">
     <title>{{ page.title }}</title>
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
@@ -88,6 +89,6 @@
 <script type='text/javascript' src='{{ ASSET_PATH }}/js/scripts1.js'></script> 
 
 
-
+ {% endstrip %}
 </body>
 </html>

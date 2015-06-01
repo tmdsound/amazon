@@ -1,0 +1,10 @@
+{% assign pages_list = tag[1] %} 
+	{% for node in pages_list %}
+		{% if node.category != empty %}
+		    
+			<li class="menu-item">
+				<a href="/{{node.category}}/">{{node.category}}</a>
+			</li>
+		{% endif %}
+
+  	{% endfor %}

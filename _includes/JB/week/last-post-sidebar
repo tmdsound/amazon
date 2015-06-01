@@ -1,17 +1,16 @@
-
-					{% for post in site.posts limit:5 %}
-					<article class="cp-wrap cp-small clearfix">
-						<div class="cp-thumb-small"> 
-							<a href="{{ post.url }}" title="{{post.title}}">
-								<img src="/{{post.category}}/thumbnail/{{ post.image }}" class="attachment-cp-thumb-small wp-post-image" alt="Seaside" />
-								</a>
-							</div>
-						<p class="entry-meta">
-							<span class="updated">{{post.date | date: "%d %m %Y" }}</span>
-							</p>
-						<h3 class="cp-title-small">
-							<a href="{{post.url}}" title="{{post.title}}" rel="bookmark">{{ post.title }}</a>
-								</h3> 
-						</article>
-					<hr class="mh-separator"> 
-						{% endfor %}
+{% for post in site.posts limit:5 %}
+<article class="cp-wrap cp-small clearfix">
+	<div class="cp-thumb-small"> 
+		<a href="{{ post.url }}" title="{{post.title}}">
+			<img src="/{{post.category}}/thumbnail/{{ post.image }}" class="attachment-cp-thumb-small wp-post-image" alt="Seaside" />
+			</a>
+		</div>
+	<p class="entry-meta">
+		<span class="updated">{{post.date | date: "%d %m %Y" }}</span>
+		</p>
+	<h3 class="cp-title-small">
+		<a href="{{post.url}}" title="{{post.title}}" rel="bookmark">{{ post.title }}</a>
+			</h3> 
+	</article>
+<hr class="mh-separator"> 
+	{% endfor %}

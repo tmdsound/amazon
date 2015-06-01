@@ -1,0 +1,5 @@
+{% for tag in site.tags %} 
+	{% if tag[0] == 'conceptcar' %}
+	{% include JB/week/sidebar-post %}
+	{% endif %}
+{% endfor %}

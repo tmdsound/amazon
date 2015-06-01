@@ -7,19 +7,12 @@
 						</div>
 					</div>
 				</div>
-
 				<div class="sb-widget">
 				{% include JB/week/last-post-sidebar %}
 				</div>
-
 				<div class="sb-widget">
-				{% for tag in site.tags %} 
-						{% if tag[0] == 'conceptcar' %}
-						{% include JB/week/sidebar-post %}
-						{% endif %}
-					{% endfor %}
+				{% include JB/week/concept-sidebar %}
 				</div>
-
 				<div class="sb-widget">
 					{% include JB/week/widget/tagcloud %}
         		</div>

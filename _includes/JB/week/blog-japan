@@ -1,6 +1,6 @@
 	{% assign pages_list = tag[1] %} 
 
-      {% for node in pages_list limit:1 %}
+      {% for node in pages_list limit:1 offset:1 %}
     {% if node.title != null %}
       	{% if page.url == node.url %}
       	<li class="active"><a href="{{ BASE_PATH }}{{node.url}}" class="active">{{node.title}}</a></li>

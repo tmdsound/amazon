@@ -1,19 +1,11 @@
 ---
 layout: page_a
-title: "europe"
+title: "asia"
 category: asia
 description: ""
 cat: asia
 ---
+
 {% include JB/setup %}
-
-{% for tag in site.tags %} 
-	{% if tag[0] == 'asia'%}
-
-  <ul >
-    {% assign pages_list = tag[1] %} 
-    {% include JB/pages1_list %}
-   
-  </ul>
-  {% endif %}
-{% endfor %}
+{% include JB/week/blog1 %}
+{% include JB/week/pagin %}
