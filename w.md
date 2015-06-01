@@ -1,6 +1,6 @@
 ---
 layout: page_a
-title: "Wqweqweqw"
+title: "W"
 description: ""
 category: tuning
 cat: tuning
