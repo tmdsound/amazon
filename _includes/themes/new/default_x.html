@@ -86,7 +86,11 @@
 
 <script async type='text/javascript' src='{{ ASSET_PATH }}/js/jquery.form.min.js'></script>
 <script async type='text/javascript' src='{{ ASSET_PATH }}/js/scripts1.js'></script> 
-
+<script>
+    $(document).ready(function() {
+        $("head").append("<link rel='stylesheet' type='text/css' href='{{ ASSET_PATH }}/css/a.css' />");
+    });
+</script>
 
  {% endstrip %}
 </body>
