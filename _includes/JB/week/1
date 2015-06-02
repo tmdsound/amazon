@@ -9,7 +9,7 @@
  				</a>
  			</div>
  				<p class="entry-meta"> 
- 					<span class="entry-meta-cats"><a href="{{ post.category.url }}" rel="category tag">{{ post.category }}</a>
+ 					<span class="entry-meta-cats"><a href="/{{ post.category }}/" rel="category tag">{{ post.category }}</a>
  					</span> 
  					<span class="entry-meta-date updated">{{ post.date | date: "%Y-%m-%d"}}</span>
  				</p>
