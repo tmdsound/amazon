@@ -23,14 +23,14 @@
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:site" content="@{{site.author.twitter}}"/>
 
-<meta property="twitter:title" content="{{ page.title }}" />
-
-<meta name="twitter:image:src" content="{{site.url}}/{{page.category}}/{{page.image}}"/> 
-<meta name="twitter:description" content="{{ page.excerpt | strip_html | strip_newlines }}"s />
 
 <meta property="og:title" content="{{ page.title }}" />
 <meta property="og:url" content="{{site.url}}{{page.url}}" />
+{% if page.description %}
 <meta property="og:description" content="{{ page.description }}" />
+{% else %}
+<meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines }}" />
+{% endif %}
 <meta property="og:image" content="{{site.url}}/{{page.category}}/{{page.image}}" />
 <meta property="og:type" content="website" />
 <meta property="fb:admins" content="100007240991418"/>
