@@ -8,7 +8,7 @@
   <article class="content-list clearfix">
     <div class="content-thumb content-list-thumb"> 
       <a href="{{ BASE_PATH }}{{node.url}}">
-        <img width="260" height="146" src="{{ BASE_PATH }}/{{node.category}}/{{ node.image }}" class="attachment-content-list wp-post-image" alt="{{ node.title }}" /></a>
+        <img src="{{ BASE_PATH }}/{{node.category}}/medium/{{ node.image }}" class="attachment-content-list wp-post-image" alt="{{ node.title }}" /></a>
       </div> 
       <header class="content-list-header">
         <p class="entry-meta"> 
