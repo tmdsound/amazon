@@ -63,8 +63,10 @@
         <div class="header-menu clearfix">
           <!-- Menu --> {% include JB/week/menu-top %}
           <div class="header-sub clearfix">
-            <!-- HotTopics -->{% include JB/week/hot-topics %} 
-    {% include JB/week/search %}
+            <!-- HotTopics -->
+            {% include JB/week/hot-topics %} 
+
+            {% include JB/week/search %}
           </div>
         </div> 
     </header>
@@ -83,12 +85,15 @@
 <script async type='text/javascript' src='{{ ASSET_PATH }}/js/jquery.js'></script> 
 <script async type='text/javascript' src='{{ ASSET_PATH }}/js/jquery-migrate.min.js'></script> 
 <script async type='text/javascript' src='{{ ASSET_PATH }}/js/scripts.js'></script> 
-
+<!-- <script type='text/javascript' src='http://demo.mh-themes.com/newsdesk/wp-content/themes/mh_newsdesk/js/scripts.js?ver=4.2.1'></script> -->
 <script async type='text/javascript' src='{{ ASSET_PATH }}/js/jquery.form.min.js'></script>
 <script async type='text/javascript' src='{{ ASSET_PATH }}/js/scripts1.js'></script> 
+<script type="text/javascript">
+  
  jQuery (document).ready(function() {
     jQuery("head").append("<link type="text/css" media="all" href="{{ ASSET_PATH }}/css/a.css" rel="stylesheet" />"); 
  });
+</script>
  {% endstrip %}
 </body>
 </html>
