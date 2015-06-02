@@ -9,7 +9,7 @@
   <!-- This site is optimized with the Yoast WordPress SEO plugin v2.1.1 - https://yoast.com/wordpress/plugins/seo/ -->
   
   <!-- / Yoast WordPress SEO plugin. -->
-  <link type="text/css" media="all" href="{{ ASSET_PATH }}/css/a.css" rel="stylesheet" />
+  <!-- <link type="text/css" media="all" href="{{ ASSET_PATH }}/css/a.css" rel="stylesheet" /> -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel='stylesheet' id='mh-font-awesome-css'  href='{{ ASSET_PATH }}/font-awesome-4.3.0/css/font-awesome.min.css' type='text/css' media='all' />
   <!-- <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700&subset=cyrillic' rel='stylesheet' type='text/css'> -->
@@ -86,6 +86,9 @@
 
 <script async type='text/javascript' src='{{ ASSET_PATH }}/js/jquery.form.min.js'></script>
 <script async type='text/javascript' src='{{ ASSET_PATH }}/js/scripts1.js'></script> 
+ jQuery (document).ready(function() {
+    jQuery("head").append("<link type="text/css" media="all" href="{{ ASSET_PATH }}/css/a.css" rel="stylesheet" />"); 
+ });
  {% endstrip %}
 </body>
 </html>
